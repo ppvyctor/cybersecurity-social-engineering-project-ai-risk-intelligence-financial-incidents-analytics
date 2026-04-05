@@ -1,0 +1,49 @@
+
+
+
+[Consume APIs using AI -(MCP)](https://docs.rapidapi.com/docs/consume-apis-using-ai)
+
+LLM-ready in minutes: No custom adapters—your REST becomes MCP tools directly.
+
+Consume any API using Model Context Protocol (MCP)
+
+
+Overview
+
+Expose any REST API as an MCP integration so LLMs can call your endpoints as tools. When enabled, the Nokia API Hub generates a tool-per-endpoint schema and serves it in a dedicated MCP host (mcp.rapidapi.com). Consumers can connect using their own LLM clients or try your API inside the playground via an optional Nokia-hosted LLM chat.
+
+
+Benefits
+
+* Instant LLM compatibility: Each REST endpoint becomes an MCP “tool” callable by AI agents and LLMs.
+* Simple authentication: Consumers use their existing Rapid Application key (x-rapidapi-key). Subscription to your API governs access.
+* Familiar developer experience: A new MCP button in the Playground opens a chat pane for natural language requests mapped to tools.
+* Flexible consumption: Let users test in-console with the Nokia-hosted LLM, or bring their own MCP-capable LLM clients.
+
+What changes in the Playground
+
+* New MCP button: Appears above normal REST endpoints.
+* Chat pane: Opens in the middle; natural language requests are translated into tool calls.
+* App selector above chat: Determines which Rapid Application key (x-rapidapi-key) is used; switching apps starts a new chat.
+* Send button: Behaves like “Subscribe to Test,” ensuring users have the right plan/key before tool calls.
+* Right pane: Shows MCP configuration JSON (pre-populated with the selected app’s key), and install guides for popular LLM clients.
+
+Who is this for?
+
+* Application builders evaluating capabilities before REST integration.
+* Teams connecting AI agents (Claude, OpenAI, etc.) to APIs using LLMs.
+* No-code consumers using their preferred LLM client to call tools.
+* Coming soon: No-code consumers who want their entire workflow inside the API Playground using the Nokia LLM.
+
+Connect from the Playground (Consumer)
+
+1. Go to your API → Playground.
+2. Select an Application in the app selector (this determines the x-rapidapi-key).
+3. Click the MCP button to open the MCP configuration panel and chat interface.
+4. Type a request in natural language; the assistant maps intent to tools and calls the API.
+5. Switch Application to start a new chat with a different key/context.
+
+Using your own LLM
+
+1. Use the MCP URL and Host routing to connect any MCP-capable client.
+2. Follow vendor-specific install/connect steps (examples linked from the Playground
