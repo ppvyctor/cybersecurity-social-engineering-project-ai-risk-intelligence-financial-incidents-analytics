@@ -13,9 +13,10 @@
 
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center"> 🔐 [AI Security, Cybersecurity & Social Engineering]() | [Project: Financial AI Incident Risk & Governance Analysis]() </p></p>
 
-### <p align="center"> Algorithmic Bias • Operational Risk • Governance Strategies in Financial Services </p>
+# 🔐 [AI Incidents in Banking, Financial Services and Fintech]()
+
+### An Analysis of Algorithmic Bias, Operational Risk and Governance for Regulatory Compliance
 
 
 
@@ -29,17 +30,15 @@
 
 <br>
 
-[**Institution:**]() Pontifical Catholic University of São Paulo (PUC‑SP – Humanistic AI & Data Science • 5º Semester • 2026)  <br>
-[**School:**]() FACEI – Faculty of Interdisciplinary Studies  <br>
-[**Course Repo:**]() INTEGRATED PROJECT: Cybersecurity and Social Engineering – 108 Hours  <br>
-**Professor:** [✨ Eduardo Savino Gomes]()  <br>
-[**Extensionist Activities:**]() Extension projects and workshops using open‑source software and data‑driven consulting to support the community, aligned with the 20 official extension hours of the course.
+[**Institution:**]() Pontifical Catholic University of São Paulo (PUC‑SP – Humanistic AI & Data Science • 5º Semester • 2026)  
+[**School:**]() FACEI – Faculty of Interdisciplinary Studies  
+[**Course:**]() AI Security, Cybersecurity & Social Engineering  
+[**Professor:**]() [✨ Eduardo Savino Gomes]()  
+[**Context:**]() This project analyzes real-world AI incidents in banking, financial services and fintech through the lenses of AI security, cybersecurity, social engineering, governance and regulatory compliance.
 
-<br><br>
 
-#
 
-<br><br>
+<br><br><br><br>
 <!-- ========= END Institucional INFO ========= -->
 
 <!-- ========= START BADGES ========= -->
@@ -55,17 +54,24 @@
 
 <br><br>
 
-#
 
 <br><br>
 <!-- ========= END START BADGES ========= -->
 
+The project is aligned with the course because it examines AI not only as a computational tool, but as a socio-technical risk layer embedded in highly regulated financial systems. In this context, failures in AI-driven applications such as credit scoring, fraud detection, trading systems and automated decision-making may generate algorithmic bias, operational disruption, regulatory exposure and harm to customers.
+
+Its connection with **AI Security** lies in the need to monitor, evaluate and govern AI systems as critical assets. Its connection with **Cybersecurity** emerges from the broader perspective of resilience, data protection, operational control and incident response in adversarial financial environments. Its relationship with **Social Engineering** appears in the ways AI can intensify manipulation, impersonation and trust-related risks in digital finance. Together, these dimensions justify the project’s focus on governance and regulatory compliance as central mechanisms for reducing AI-related risk.
 
 
+<br><br>
+
+#
+
+<br><br>
 
 <!-- ========= START Confidentiality statement ========= -->
 
-> [!IMPORTANT]
+> [!NOTE]
 > 
 > ⚠️ Heads Up
 >
