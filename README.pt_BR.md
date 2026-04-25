@@ -12,9 +12,9 @@
 
 
 <!-- ========= START REPO TITLE ========= -->
-# <p align="center"> 🔐 [Cybersecurity, Social Engineering and AI Security]()  / [Project 4 – AAI Incidents in Financial Services ]() 
-### <p align="center"> Análise de Viés Algorítmico, Risco Operacional e Governança de IA em Serviços Financeiros
+# <p align="center">🔐 [Segurança em IA, Cibersegurança & Engenharia Social]() | [Projeto: Análise de Risco e Governança de Incidentes de IA no Setor Financeiro]()</p>
 
+### <p align="center">Viés Algorítmico • Risco Operacional • Estratégias de Governança em Serviços Financeiros</p>
 
 
 <br><br>
