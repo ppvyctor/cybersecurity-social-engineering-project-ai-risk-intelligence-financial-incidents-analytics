@@ -115,22 +115,28 @@ Its connection with [**AI Security**]() lies in the need to monitor, evaluate an
 
 ## Table of Contents
 
+## 📋 Summary
+
 1. [Introduction](#1-introduction)
 2. [Objectives and Research Questions](#2-objectives-and-research-questions)
-3. [Business Context and Data Foundation](#3-business-context-and-data-foundation)
-4. [Methodology — CRISP-DM](#4-methodology--crisp-dm)
-5. [Data Sources and Preparation](#5-data-sources-and-preparation)
-6. [Key Variables and Hypotheses](#6-key-variables-and-hypotheses)
-7. [Statistical and AI/ML Methods](#7-statistical-and-aiml-methods)
-8. [Project Architecture — 5 Notebooks](#8-project-architecture--5-notebooks)
-9. [Database Design and REST API Layer](#9-database-design-and-rest-api-layer)
-10. [Key Findings](#10-key-findings)
-11. [Timeline, Deliverables, and Business Alignment](#11-timeline-deliverables-and-business-alignment)
-12. [Installation and Execution Guide](#12-installation-and-execution-guide)
-13. [Project Structure](#13-project-structure)
-14. [Limitations and Risk Considerations](#14-limitations-and-risk-considerations)
-15. [Conclusion and Next Steps](#15-conclusion-and-next-steps)
-16. [References](#16-references)
+3. [Foundations and Data Context](#3-foundations-and-data-context)
+4. [CRISP-DM Methodology](#4-crisp-dm-methodology)
+5. [Data Used and Preparation](#5-data-used-and-preparation)
+6. [Analytical Variables and Hypotheses](#6-analytical-variables-and-hypotheses)
+7. [Statistical Analysis and Inferential Results](#7-statistical-analysis-and-inferential-results)
+8. [Machine Learning Modeling](#8-machine-learning-modeling)
+9. [Relational Database and RESTful API](#9-relational-database-and-restful-api)
+10. [Interactive Dashboard](#10-interactive-dashboard)
+11. [Project Architecture](#11-project-architecture)
+12. [Technical Structure of the Notebooks](#12-technical-structure-of-the-notebooks)
+13. [Consolidated Results](#13-consolidated-results)
+14. [Limitations and Methodological Considerations](#14-limitations-and-methodological-considerations)
+15. [Execution Guide](#15-execution-guide)
+16. [File Structure](#16-file-structure)
+17. [Dependencies](#17-dependencies)
+18. [Conclusions and Next Steps](#18-conclusions-and-next-steps)
+19. [References](#19-references)
+
 
 
 <br><br>
