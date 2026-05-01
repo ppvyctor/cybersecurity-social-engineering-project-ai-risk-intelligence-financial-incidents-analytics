@@ -2,6 +2,7 @@
 # AI Incidents in Financial Services — Requirements
 # Python 3.10+ | PUC-SP | CRISP-DM Project
 # ═══════════════════════════════════════════════════════════════
+gunicorn
 
 # ----------------------------------------------------------------
 # 📦 CORE DATA STACK
