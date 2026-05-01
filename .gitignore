@@ -2,7 +2,7 @@
 # Streamlit Secrets (SECURITY)
 ############################
 # Ignora qualquer secrets.toml do Streamlit em qualquer subpasta
-4_Final_Running_Code_Pedro/dashboard/.streamlit/secrets.toml
+4_Final_Running_Code/dashboard/.streamlit/secrets.toml
 
 ############################
 # Environments
