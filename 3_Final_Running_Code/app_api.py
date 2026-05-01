@@ -33,10 +33,10 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 # CARREGAMENTO MODELOS ML
 # =========================
 try:
-    severity_model = joblib.load(f'{MODELS_PATH}/severity_classifier.pkl')
-    investigation_model = joblib.load(f'{MODELS_PATH}/investigation_classifier.pkl')
-    features_severity = joblib.load(f'{MODELS_PATH}/features_severity.pkl')
-    features_investigation = joblib.load(f'{MODELS_PATH}/features_investigation.pkl')
+    severity_model = joblib.load(fr'{MODELS_PATH}\severity_classifier.pkl')
+    investigation_model = joblib.load(fr'{MODELS_PATH}\investigation_classifier.pkl')
+    features_severity = joblib.load(fr'{MODELS_PATH}\features_severity.pkl')
+    features_investigation = joblib.load(fr'{MODELS_PATH}\features_investigation.pkl')
 
     models_loaded = True
     print("✅ Modelos carregados com sucesso")
