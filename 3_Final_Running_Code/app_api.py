@@ -16,8 +16,8 @@ from flask_cors import CORS
 # =========================
 # CONFIGURAÇÕES
 # =========================
-DATABASE = 'ai_finance_incidents.db'
-MODELS_PATH = r'C:\Users\PP\OneDrive - Fundação São Paulo\PUC-SP\5 Semestre\SEGURANÇA CIBERNÉTICA E ENGENHARIA SOCIAL\PROJETO01\models\\'
+DATABASE = 'database/ai_finance_incidents.db'
+MODELS_PATH = r'models\\'
 PORT = int(os.getenv("PORT", 5000))
 
 # =========================
