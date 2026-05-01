@@ -1334,18 +1334,18 @@ def page_chatbot(df: pd.DataFrame, theme: dict):
 
     # ── Configuração da chave OpenAI ─────────────────────────────────────────
     with st.expander("⚙️ Configuração da API OpenAI", expanded=False):
-        openai_key = st.text_input(
-            "API Key OpenAI",
-            value=os.environ.get("OPENAI_API_KEY",""),
+        grok_key = st.text_input(
+            "API Key Grok",
+            value=os.environ.get("GROQ_API_KEY",""),
             type="password",
             help="Cole sua chave da OpenAI. Ela não é armazenada.",
         )
-        model_choice = st.selectbox("Modelo", ["gpt-4o-mini","gpt-4o","gpt-3.5-turbo"])
-        if openai_key:
-            st.session_state["openai_key"]   = openai_key
-            st.session_state["openai_model"] = model_choice
+        model_choice = st.selectbox("Modelo", ["llama-3.3-70b-versatile"])
+        if grok_key:
+            st.session_state["grok_key"]   = grok_key
+            st.session_state["grok_model"] = model_choice
             st.success("✅ Chave configurada")
-
+        
     # ── Contexto dos dados para o chatbot ───────────────────────────────────
     def build_context(df: pd.DataFrame) -> str:
         total    = len(df)
@@ -1432,13 +1432,15 @@ Seja preciso com os dados e metodologias.
         question = st.session_state["chat_messages"][-1]["content"]
 
         # ── Chamar OpenAI ─────────────────────────────────────────────────────
-        openai_key_s = st.session_state.get("openai_key","")
-        if openai_key_s:
+        grok_key_s = st.session_state.get("grok_key","")
+        if grok_key_s:
             try:
-                from openai import OpenAI
-                client = OpenAI(api_key=openai_key_s)
-                model  = st.session_state.get("openai_model","gpt-4o-mini")
-
+                from groq import Groq
+                client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+                model  = st.session_state.get("grok_model","llama-3.3-70b-versatile")
+                print(client)
+                print(model)
+                print("Chave e modelo configurados, chamando API...")
                 with st.spinner("Gerando resposta..."):
                     response = client.chat.completions.create(
                         model=model,
@@ -1453,10 +1455,10 @@ Seja preciso com os dados e metodologias.
                     answer = response.choices[0].message.content
 
             except ImportError:
-                answer = ("⚠️ Pacote `openai` não instalado. "
-                          "Execute: `pip install openai`")
+                answer = ("⚠️ Pacote `groq` não instalado. "
+                          "Execute: `pip install groq`")
             except Exception as e:
-                answer = f"❌ Erro na API OpenAI: {str(e)}"
+                answer = f"❌ Erro na API do Grok: {str(e)}"
         else:
             # Resposta local baseada em padrões — funciona sem API key
             answer = _local_chatbot(question, df)
