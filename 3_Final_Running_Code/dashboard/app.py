@@ -59,7 +59,7 @@ st.set_page_config(
 # ──────────────────────────────────────────────────────────────────────────────
 CSV_FILE   = "incidents_finance_filtered.csv"
 DB_FILE    = "ai_finance_incidents.db"
-API_BASE   = "http://192.168.15.20:5000"  # URL da API Flask (Notebook 4)
+API_BASE   = "https://ai-finance-incidents-analysis-api.onrender.com/"  # URL da API Flask (Notebook 4)
 
 SEVERITY_COLORS = {
     "low"      : "#22c55e",   # verde
