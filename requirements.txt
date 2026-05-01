@@ -65,7 +65,7 @@ requests>=2.31.0
 # 🤖 GENERATIVE AI (OPTIONAL)
 # ----------------------------------------------------------------
 # Integração com modelos de linguagem (chatbot/assistente)
-openai>=1.0.0
+groq>=1.2.0
 
 # ----------------------------------------------------------------
 # 🧰 UTILITIES
