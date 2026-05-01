@@ -17,8 +17,8 @@ from pathlib import Path
 # =========================
 # CONFIGURAÇÕES
 # =========================
-DATABASE = r'database\ai_finance_incidents.db'
-MODELS_PATH = fr'{Path(__file__).resolve().parent}\models'
+DATABASE = r'database/ai_finance_incidents.db'
+MODELS_PATH = fr'{Path(__file__).resolve().parent}/models'
 PORT = int(os.getenv("PORT", 5000))
 
 # =========================
@@ -34,10 +34,10 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 # CARREGAMENTO MODELOS ML
 # =========================
 try:
-    severity_model = joblib.load(fr'{MODELS_PATH}\severity_classifier.pkl')
-    investigation_model = joblib.load(fr'{MODELS_PATH}\investigation_classifier.pkl')
-    features_severity = joblib.load(fr'{MODELS_PATH}\features_severity.pkl')
-    features_investigation = joblib.load(fr'{MODELS_PATH}\features_investigation.pkl')
+    severity_model = joblib.load(fr'{MODELS_PATH}/severity_classifier.pkl')
+    investigation_model = joblib.load(fr'{MODELS_PATH}/investigation_classifier.pkl')
+    features_severity = joblib.load(fr'{MODELS_PATH}/features_severity.pkl')
+    features_investigation = joblib.load(fr'{MODELS_PATH}/features_investigation.pkl')
 
     models_loaded = True
     print("✅ Modelos carregados com sucesso")
