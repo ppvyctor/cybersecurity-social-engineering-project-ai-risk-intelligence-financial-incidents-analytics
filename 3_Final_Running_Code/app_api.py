@@ -12,12 +12,13 @@ import joblib
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from pathlib import Path
 
 # =========================
 # CONFIGURAÇÕES
 # =========================
 DATABASE = r'database\ai_finance_incidents.db'
-MODELS_PATH = r'3_Final_Running_Code\models'
+MODELS_PATH = fr'{Path(__file__).resolve().parent}\models'
 PORT = int(os.getenv("PORT", 5000))
 
 # =========================
