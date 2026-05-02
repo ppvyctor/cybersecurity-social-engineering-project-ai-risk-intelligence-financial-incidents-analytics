@@ -11,7 +11,7 @@ Componentes:
   • Modelos de ML     — Feature importance, ROC, Confusion Matrix
   • API Explorer      — Consulta em tempo real à API Flask
   • Preditor de Risco — Interface de predição ML
-  • Assistente IA     — Chatbot integrado com OpenAI
+  • Assistente IA     — Chatbot integrado com Grok
 
 Execução:
   streamlit run app.py
@@ -1329,16 +1329,16 @@ def page_predictor(df: pd.DataFrame, theme: dict):
 def page_chatbot(df: pd.DataFrame, theme: dict):
     section_header(
         "🤖 Assistente IA",
-        "Chat inteligente sobre os dados de incidentes — integrado com OpenAI GPT"
+        "Chat inteligente sobre os dados de incidentes — integrado com Grok AI"
     )
 
-    # ── Configuração da chave OpenAI ─────────────────────────────────────────
-    with st.expander("⚙️ Configuração da API OpenAI", expanded=False):
+    # ── Configuração da chave Grok ─────────────────────────────────────────
+    with st.expander("⚙️ Configuração da API Grok", expanded=False):
         grok_key = st.text_input(
             "API Key Grok",
             value=os.environ.get("GROQ_API_KEY",""),
             type="password",
-            help="Cole sua chave da OpenAI. Ela não é armazenada.",
+            help="Cole sua chave da Grok. Ela não é armazenada.",
         )
         model_choice = st.selectbox("Modelo", ["llama-3.3-70b-versatile"])
         if grok_key:
@@ -1431,7 +1431,7 @@ Seja preciso com os dados e metodologias.
 
         question = st.session_state["chat_messages"][-1]["content"]
 
-        # ── Chamar OpenAI ─────────────────────────────────────────────────────
+        # ── Chamar Grok ─────────────────────────────────────────────────────
         grok_key_s = st.session_state.get("grok_key","")
         if grok_key_s:
             try:
@@ -1477,7 +1477,7 @@ Seja preciso com os dados e metodologias.
 
 def _local_chatbot(question: str, df: pd.DataFrame) -> str:
     """
-    Respostas locais baseadas em palavras-chave quando a API OpenAI não está configurada.
+    Respostas locais baseadas em palavras-chave quando a API Grok não está configurada.
     Funciona completamente offline.
     """
     q = question.lower()
@@ -1581,7 +1581,7 @@ def _local_chatbot(question: str, df: pd.DataFrame) -> str:
         "- NB3: Machine Learning — Logistic Regression, Random Forest, XGBoost\n"
         "- NB4: API RESTful Flask — 9 endpoints\n"
         "- NB5: Pipeline completo unificado\n\n"
-        "💡 *Configure sua API Key OpenAI para respostas mais detalhadas e personalizadas.*"
+        "💡 *Configure sua API Key Grok para respostas mais detalhadas e personalizadas.*"
     )
 
 
