@@ -1340,7 +1340,7 @@ def page_chatbot(df: pd.DataFrame, theme: dict):
             type="password",
             help="Cole sua chave da Grok. Ela não é armazenada.",
         )
-        model_choice = st.selectbox("Modelo", ["llama-3.3-70b-versatile"])
+        model_choice = st.selectbox("Modelo", ["llama-3.1-8b-instant"])
         
         st.session_state["grok_key"]   = os.environ.get("GROQ_API_KEY","") if grok_key.strip() == "" else grok_key
         st.session_state["grok_model"] = model_choice
