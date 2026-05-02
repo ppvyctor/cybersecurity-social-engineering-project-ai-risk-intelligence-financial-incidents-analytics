@@ -1336,15 +1336,15 @@ def page_chatbot(df: pd.DataFrame, theme: dict):
     with st.expander("⚙️ Configuração da API Grok", expanded=False):
         grok_key = st.text_input(
             "API Key Grok",
-            value=os.environ.get("GROQ_API_KEY",""),
+            placeholder="gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
             type="password",
             help="Cole sua chave da Grok. Ela não é armazenada.",
         )
         model_choice = st.selectbox("Modelo", ["llama-3.3-70b-versatile"])
-        if grok_key:
-            st.session_state["grok_key"]   = grok_key
-            st.session_state["grok_model"] = model_choice
-            st.success("✅ Chave configurada")
+        
+        st.session_state["grok_key"]   = os.environ.get("GROQ_API_KEY","") if grok_key.strip() == "" else grok_key
+        st.session_state["grok_model"] = model_choice
+        st.success("✅ Chave configurada")
         
     # ── Contexto dos dados para o chatbot ───────────────────────────────────
     def build_context(df: pd.DataFrame) -> str:
