@@ -1108,7 +1108,7 @@ def page_api(theme: dict):
     # Status da API
     status = call_api("/")
     if status["ok"]:
-        st.success("✅ API online — `http://localhost:5000`")
+        st.success(f"✅ API online — `{API_BASE}`")
         api_info = status["data"]
         col1, col2 = st.columns(2)
         with col1:
